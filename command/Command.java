@@ -1,13 +1,11 @@
 package command;
 
-public class Command {
+public abstract class Command {
 
-    public Command(Document document)
-    {
+    protected Document document;
+
+    public Command(Document document) {
 
     }
-    public String execute()
-    {
-        
-    }
+    public abstract String execute();
 }
