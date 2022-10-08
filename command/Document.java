@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Document {
 public String fileName;
 public ArrayList<String> lines;
-    public Document(String docName) {
+    public Document(String fileName) {
 
     }
     public String view()
