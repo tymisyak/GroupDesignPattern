@@ -5,7 +5,7 @@ package command;
  */
 public class SaveCommand extends Command {
     /**
-    ** creates the save command
+     * creates the save command
      * @param doc where the data is saved
      */
     public SaveCommand(Document doc) {
@@ -16,7 +16,7 @@ public class SaveCommand extends Command {
      * @return saves the document
      */
     public String execute() {
-        return Document.save(); 
+        return document.save(); 
     }
 
 }

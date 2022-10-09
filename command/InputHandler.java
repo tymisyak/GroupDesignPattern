@@ -6,10 +6,13 @@ public class InputHandler {
     private HashMap<String, Command> commands;
 
     public InputHandler(Document document) {
-        // add stuff
+        commands.put("save", SaveCommand(document));
+        commands.put("view", ViewCommand(document));
+        commands.put("append", AppendCommand(document));
+        commands.put("write", WriteCommand(document));
     }
 
     public void inputEntered(String data) {
-        // add stuff
+        commands.get(data);
     }
 }

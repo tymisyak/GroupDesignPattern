@@ -34,7 +34,7 @@ private ArrayList<String> lines;
     public String append(String line)
     {
         lines.add(line);
-        return "The line has bee appended to the document";
+        return "The line has been appended to the document";
     }
     /**
      * Adds a new line to the arraylist while removing the other lines present

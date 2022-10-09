@@ -16,6 +16,6 @@ public class ViewCommand extends Command {
      * @return data in the document
      */
     public String execute() {
-        return Document.view(); 
+        return document.view(); 
     }
 }
