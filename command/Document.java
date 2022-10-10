@@ -23,8 +23,10 @@ private ArrayList<String> lines;
     {
         String display = "__________________";
         for(int i = 0; i<lines.size();i++)
-            display = display +"/n|     "+lines.get(i)+"     |";
-        System.out.println("__________________");
+        {
+            display = display +"\n|     "+lines.get(i)+"     |";
+        }
+        display = display+"\n__________________";
         return display;
     }
     /**
