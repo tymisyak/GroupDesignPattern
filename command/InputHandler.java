@@ -13,6 +13,7 @@ public class InputHandler {
      * @param document The document where data will be stored
      */
     public InputHandler(Document document) {
+        commands = new HashMap<String, Command>();
         commands.put("save", new SaveCommand(document));
         commands.put("view", new ViewCommand(document));
         commands.put("append", new AppendCommand(document));

@@ -18,6 +18,7 @@ public class WriteCommand extends Command {
      */
     public WriteCommand(Document doc) {
         super(doc);
+        in = new Scanner(System.in);
     }
 
     /**
@@ -26,7 +27,7 @@ public class WriteCommand extends Command {
      * @return data in the document
      */
     public String execute() {
-        return "The line was written to the file";
+        return "Enter text: " + document.write(in.nextLine());
     }
 
 }

@@ -17,6 +17,7 @@ public class AppendCommand extends Command {
      */
     public AppendCommand(Document doc) {
         super(doc);
+        in = new Scanner(System.in);
     }
 
     /**
@@ -25,6 +26,6 @@ public class AppendCommand extends Command {
      * @return data in the document
      */
     public String execute() {
-        return "The line has been appended to the document";
+        return "Enter text: " + document.append(in.nextLine());
     }
 }
