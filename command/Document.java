@@ -13,7 +13,7 @@ private ArrayList<String> lines;
      */
     public Document(String fileName) {
         lines = FileManipulator.readFile(fileName);
-        fileName = this.fileName;
+        this.fileName = fileName;
     }
     /**
      * This method is used to display the document the user is creating
