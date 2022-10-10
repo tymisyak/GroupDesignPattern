@@ -28,6 +28,6 @@ public class AppendCommand extends Command {
     public String execute() {
         System.out.println("Enter text:");
         String line = in.nextLine();
-        return document.write(line);
+        return document.append(line);
     }
 }
