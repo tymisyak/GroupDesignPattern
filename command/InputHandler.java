@@ -25,6 +25,8 @@ public class InputHandler {
      * @param data A string of what command the user entered
      */
     public void inputEntered(String data) {
-        commands.get(data);
+        if(commands.get(data) != null) {
+            commands.get(data).execute();
+        }
     }
 }
