@@ -26,7 +26,7 @@ public class InputHandler {
      */
     public void inputEntered(String data) {
         if(commands.get(data) != null) {
-            commands.get(data).execute();
+            System.out.println(commands.get(data).execute());
         }
     }
 }
