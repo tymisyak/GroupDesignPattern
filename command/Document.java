@@ -26,7 +26,7 @@ private ArrayList<String> lines;
         {
             display = display +"\n|     "+lines.get(i)+"     |";
         }
-        display = display+"\n__________________";
+        display = display+"\n__________________\n";
         return display;
     }
     /**
@@ -57,9 +57,9 @@ private ArrayList<String> lines;
     public String save()
     {
         if(FileManipulator.writeFile(fileName, lines))
-        return "The file has been saved"; 
+            return "The file has been saved"; 
         else
-        return "Sorry, we cannot save at this time";
+            return "Sorry, we cannot save at this time";
     }
 
 }
