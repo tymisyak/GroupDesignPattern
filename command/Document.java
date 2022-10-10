@@ -12,6 +12,7 @@ private ArrayList<String> lines;
      * Constructor method which sets the filename
      */
     public Document(String fileName) {
+        lines = FileManipulator.readFile(fileName);
         fileName = this.fileName;
     }
     /**
